@@ -26,7 +26,7 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo Request::$BASE_URL; ?>index.php/about">About Us</a></li>
             <li><a href="<?php echo Request::$BASE_URL; ?>index.php/permission">Permission</a></li>
-            <li><a href="<?php echo Request::$BASE_URL; ?>index.php/guide">Guide</a></li>
+<!--            <li><a href="--><?php //echo Request::$BASE_URL; ?><!--index.php/guide">Guide</a></li>-->
             <li><a href="<?php echo Request::$BASE_URL; ?>index.php/forum">Forum</a></li>
             <li><a href="<?php echo Request::$BASE_URL; ?>index.php/event">Events</a></li>
             <li><a href="<?php echo Request::$BASE_URL; ?>index.php/contact">Contact Us</a></li>
