@@ -497,39 +497,52 @@
 
 
 </div>
+
 <!-- container ends -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Subscription Packages</h4>
+                <h4 class="modal-title">Wakaf & Endowment Packages</h4>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-5"><b>Trail Package:</b></div>
-                    <div class="col-md-7">3 contect access</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5"><b>3 Months (MYR 5):</b></div>
-                    <div class="col-md-7">100 content access within the 3 months</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5"><b>12 Months (MYR 10):</b></div>
-                    <div class="col-md-7">200 content access within the 12 months</div>
-                </div>
-                <br /><br />
-                <div class="row">
-                    <div class="col-md-12"><h2><b>Platinum & Industrial Packages</b></h2>(Exclusively for product advertisements and marketing purposes)</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5"><b>6 Months (MYR 100):</b></div>
-                    <div class="col-md-7">Advertisment of your product on the articles page for 6 months</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5"><b>12 Months (MYR 200):</b></div>
-                    <div class="col-md-7">Advertisment of your product on the articles page for 12 months</div>
-                </div>
+                <table class="table-responsive table-bordered">
+	 				<thead>
+	 					<tr>
+	 						<th>Packages</th>
+	 						<th>Details</th>
+	 					</tr>
+	 				</thead>
+	 				<tbody>
+ 						<tr>
+ 							<td>Trail</td>
+ 							<td>3 keyword search</td>
+ 						</tr>
+ 						<tr>
+ 							<td>3 Months (MYR 5)</td>
+ 							<td>100 content access within the 3 months</td>
+ 						</tr>
+ 						<tr>
+ 							<td>12 Months (MYR 10)</td>
+ 							<td>200 content access within the 12 months</td>
+ 						</tr>
+ 						<tr>
+ 							<td colspan="2">
+ 								<h3>Platinum & Industrial Packages</h3>
+ 								<p>(Exclusively for product advertisements and marketing purposes)</p>
+ 							</td>
+ 						</tr>
+ 						<tr>
+ 							<td>6 Months (MYR 100)</td>
+ 							<td>Advertisement for 6 months</td>
+ 						</tr>
+ 						<tr>
+ 							<td>12 Months (MYR 200)</td>
+ 							<td>Advertisement for 12 months</td>
+ 						</tr>
+	 				</tbody>
+	 			</table>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
