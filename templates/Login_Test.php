@@ -508,41 +508,41 @@
             </div>
             <div class="modal-body">
                 <table class="table-responsive table-bordered">
-	 				<thead>
-	 					<tr>
-	 						<th>Packages</th>
-	 						<th>Details</th>
-	 					</tr>
-	 				</thead>
-	 				<tbody>
- 						<tr>
- 							<td>Trail</td>
- 							<td>3 keyword search</td>
- 						</tr>
- 						<tr>
- 							<td>3 Months (MYR 5)</td>
- 							<td>100 content access within the 3 months</td>
- 						</tr>
- 						<tr>
- 							<td>12 Months (MYR 10)</td>
- 							<td>200 content access within the 12 months</td>
- 						</tr>
- 						<tr>
- 							<td colspan="2">
- 								<h3>Platinum & Industrial Packages</h3>
- 								<p>(Exclusively for product advertisements and marketing purposes)</p>
- 							</td>
- 						</tr>
- 						<tr>
- 							<td>6 Months (MYR 100)</td>
- 							<td>Advertisement for 6 months</td>
- 						</tr>
- 						<tr>
- 							<td>12 Months (MYR 200)</td>
- 							<td>Advertisement for 12 months</td>
- 						</tr>
-	 				</tbody>
-	 			</table>
+			<thead>
+				<tr>
+					<th>Packages</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Trail</td>
+					<td>3 keyword search</td>
+				</tr>
+				<tr>
+					<td>3 Months (MYR 5)</td>
+					<td>100 content access within the 3 months</td>
+				</tr>
+				<tr>
+					<td>12 Months (MYR 10)</td>
+					<td>200 content access within the 12 months</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h3>Platinum & Industrial Packages</h3>
+						<p>(Exclusively for product advertisements and marketing purposes)</p>
+					</td>
+				</tr>
+				<tr>
+					<td>6 Months (MYR 100)</td>
+					<td>Advertisement for 6 months</td>
+				</tr>
+				<tr>
+					<td>12 Months (MYR 200)</td>
+					<td>Advertisement for 12 months</td>
+				</tr>
+			</tbody>
+		</table>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
