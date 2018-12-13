@@ -168,7 +168,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Trail</td>
+                        <td>Trial</td>
                         <td>3 keyword search</td>
                     </tr>
                     <tr>
