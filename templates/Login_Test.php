@@ -271,6 +271,8 @@
                     '<input type="password" pattern=".{6,}" title="Minimum 6 Charachters" class="form-control" placeholder="Repeat Password" required name="rpassword" id="rpassword" />\n' +
                     '<br />\n' +
                     '<input type="submit" name="submit" value="Register" class="btn btn-block btn-primary" />';
+            }else if($(this).val() == 0){
+                html ='';
             }else{
                 html = '<input type="text" class="form-control" placeholder="First Name" required name="first_name"  />\n' +
                     '                <br />\n' +
