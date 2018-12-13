@@ -34,7 +34,7 @@
         </div>
         <!-- left side of search ends -->
 
-        <label class="col-md-6">
+        <div class="col-md-6">
             <h3>Register</h3>
 
             <?php if (!empty($_SESSION['msg_success']) || !empty($_SESSION['msg_error'])) { ?>
@@ -55,7 +55,7 @@
                 <input type="hidden" name="table" value="user_public" />
                 <div class="form-group">
                     <!--                <label for="sel1">Profession :</label><br>-->
-                    <button type="button" onClick="return packages()" class="btn btn-info">Packages <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></button>
+                    <button type="button" id="btn-pack" class="btn btn-info">Packages <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></button>
                     <label>Subscription : </label>
 
 
@@ -116,6 +116,7 @@
                 <br/>
                 <div id="form-data"></div>
             </form><br>
+        </div>
 
     </div>
     <!-- right side of search ends -->
@@ -150,7 +151,7 @@
 
 </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+<div class="modal fade" id="myModalx" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -270,7 +271,6 @@
                     '<input type="password" pattern=".{6,}" title="Minimum 6 Charachters" class="form-control" placeholder="Repeat Password" required name="rpassword" id="rpassword" />\n' +
                     '<br />\n' +
                     '<input type="submit" name="submit" value="Register" class="btn btn-block btn-primary" />';
-                $('#form-data').html(html);
             }else{
                 html = '<input type="text" class="form-control" placeholder="First Name" required name="first_name"  />\n' +
                     '                <br />\n' +
@@ -556,8 +556,8 @@
                     '                </div><div id="prof"></div>\n' +
                     '                <br>\n' +
                     '                <input type="submit" name="submit" value="Register" class="btn btn-block btn-primary" />';
-                $('#form-data').html(html);
             }
+            $('#form-data').html(html)
         });
     });
 

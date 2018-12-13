@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4a77c27-91b0-4256-8e3f-92710a6f4569" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Login_Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Login_Test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +17,8 @@
       <file leaf-file-name="Footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="587" column="27" lean-forward="true" selection-end-line="587" selection-end-column="27" />
+            <state relative-caret-position="728">
+              <caret line="588" column="23" selection-start-line="588" selection-start-column="23" selection-end-line="588" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -44,8 +44,16 @@
       <file leaf-file-name="Login_Test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Login_Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="562" lean-forward="true" selection-start-line="562" selection-end-line="562" />
+            <state relative-caret-position="364">
+              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+              <folding>
+                <element signature="e#7015#7022#1#HTML" expanded="true" />
+                <element signature="e#2333#2338#0" expanded="true" />
+                <element signature="e#18034#18039#0" expanded="true" />
+                <element signature="e#20851#20856#0" expanded="true" />
+                <element signature="e#21362#21367#0" expanded="true" />
+                <element signature="e#22895#22900#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +61,8 @@
       <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+            <state relative-caret-position="100">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -84,6 +92,7 @@
       <find>&lt;?php echo Request::$BASE_URL; ?&gt;</find>
       <find>&lt;?php echo $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?&gt;</find>
       <find>pack</find>
+      <find>modal</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -188,12 +197,12 @@
       <workItem from="1544003026214" duration="599000" />
       <workItem from="1544083265285" duration="82000" />
       <workItem from="1544290881667" duration="38000" />
-      <workItem from="1544693821021" duration="4586000" />
+      <workItem from="1544693821021" duration="6403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9034000" />
+    <option name="totallyTimeSpent" value="10851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -219,6 +228,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32828283" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -245,6 +275,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15232">
           <caret line="544" column="30" selection-start-line="544" selection-start-column="30" selection-end-line="544" selection-end-column="30" />
+          <folding>
+            <element signature="e#7015#7022#1#HTML" expanded="true" />
+            <element signature="e#2333#2338#0" expanded="true" />
+            <element signature="e#18034#18039#0" expanded="true" />
+            <element signature="e#20851#20856#0" expanded="true" />
+            <element signature="e#21362#21367#0" expanded="true" />
+            <element signature="e#22895#22900#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -461,22 +499,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+        <state relative-caret-position="100">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="587" column="27" lean-forward="true" selection-end-line="587" selection-end-column="27" />
+        <state relative-caret-position="728">
+          <caret line="588" column="23" selection-start-line="588" selection-start-column="23" selection-end-line="588" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Login_Test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="562" lean-forward="true" selection-start-line="562" selection-end-line="562" />
+        <state relative-caret-position="364">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <element signature="e#7015#7022#1#HTML" expanded="true" />
+            <element signature="e#2333#2338#0" expanded="true" />
+            <element signature="e#18034#18039#0" expanded="true" />
+            <element signature="e#20851#20856#0" expanded="true" />
+            <element signature="e#21362#21367#0" expanded="true" />
+            <element signature="e#22895#22900#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
