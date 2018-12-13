@@ -86,15 +86,15 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;?php echo Request::$BASE_URL; ?&gt;</find>
-      <find>&lt;?php echo $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?&gt;</find>
+      <find />
+      <find />
       <find>pack</find>
       <find>modal</find>
     </findStrings>
     <replaceStrings>
       <replace />
-      <replace>&lt;?php echo $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?&gt;</replace>
-      <replace>&lt;?php echo Request::$BASE_URL; ?&gt;</replace>
+      <replace />
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>E:\xampp\htdocs\naisse</dir>
@@ -132,7 +132,7 @@
       <path value="$PROJECT_DIR$/admin/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1364" />
