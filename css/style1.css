@@ -1,3 +1,16 @@
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, 
+.table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #bfbfbf;
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 5%;
+}
+.table-bordered h3{
+	margin:5px 0px;
+	font-size: 20px;
+}
+
 
 .nav-search{
 	margin-left: 10px;
