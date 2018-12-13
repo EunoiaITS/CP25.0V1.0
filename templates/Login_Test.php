@@ -61,7 +61,7 @@
 
 
                     <?php
-                    $output = "<select id='country' class='packages' name='subscription_package_id'>";
+                    $output = "<select id='country' class='select-package' name='subscription_package_id'>";
                     $output .= "<option value='0'>Select Packages</option>";
 
                     foreach ($subscription_packages as $i) {
@@ -113,6 +113,7 @@
 
 
                 </div>
+                <br/>
                 <div id="form-data"></div>
             </form><br>
 
@@ -149,7 +150,6 @@
 
 </div>
 
-<!-- container ends -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -208,17 +208,59 @@
 <script type="text/javascript">
     $("#demo").intlTelInput();
 
-    $(function () {
-        $('.profession_field').hide();
-        $('#profession').change(function () {
-            $('.profession_field').hide();
-            $('#' + $(this).val()).show();
-        });
-    });
     $(document).ready(function(){
         var html = '';
-        $('.packages').on('change',function(e){
+        $('.select-package').on('change',function(e){
             e.preventDefault();
+            $(document).on('change','.profession',function (e) {
+                e.preventDefault();
+                var prof = $(this).val();
+                var data = ''
+                if(prof == "general"){
+                    data = '<div id="general" class="profession_field">\n' +
+                        '<label>House :</label><br>  <textarea  class="form-control"  rows="3" name="house" placeholder="house"></textarea><br>\n' +
+                        '</div>\n';
+                }else if(prof == "researcher"){
+                    data = '<div id="researcher" class="profession_field">\n' +
+                        '<label>Researcher :</label><br>  <textarea  class="form-control"  rows="1" name="institution" placeholder="institution"></textarea><br>\n' +
+                        '<input type="text"  class="form-control"  rows="1" name="area_of" placeholder="Area Of"><br>\n' +
+                        '<input type="text"  class="form-control"  rows="1" name="position" placeholder="Position"><br>\n' +
+                        '</div>\n';
+                }else if(prof == "industry"){
+                    data = '                <div id="industry" class="profession_field">\n' +
+                        '                    <label>Industry :</label><br>\n' +
+                        '                    <input type="text"  class="form-control"  rows="1" name="name_of" placeholder="Name Of"><br>\n' +
+                        '                    <textarea  class="form-control"  rows="1" name="address" placeholder="Address"></textarea><br>\n' +
+                        '                    <label> Sector:  </label>  <select name="sector">\n' +
+                        '                        <option value="0" selected>Please Select</option>\n' +
+                        '                        <option value="Accounting/Finance" >Accounting/Finance</option>\n' +
+                        '                        <option value="Admin/Human Resources">Admin/Human Resources</option>\n' +
+                        '                        <option value="Arts/Media/Communications">Arts/Media/Communications</option>\n' +
+                        '                        <option value="Building/Construction">Building/Construction</option>\n' +
+                        '                        <option value="Computer/Information Technology">Computer/Information Technology</option>\n' +
+                        '                        <option value="Education/Training">Education/Training</option>\n' +
+                        '                        <option value="Engineering">Engineering</option>\n' +
+                        '                        <option value="HealthCare">HealthCare</option>\n' +
+                        '                        <option value="Hotel/Restaurant">Hotel/Restaurant</option>\n' +
+                        '                        <option value="Manufacturing">Manufacturing</option>\n' +
+                        '                        <option value="Sales/Marketing">Sales/Marketing</option>\n' +
+                        '                        <option value="Sciences">Sciences</option>\n' +
+                        '                        <option value="Services">Services</option>\n' +
+                        '                        <option value="Others">Others</option>\n' +
+                        '                    </select>\n' +
+                        '                    <!--<input type="text"  class="form-control"  name="sector" placeholder="Sector"><br>-->\n' +
+                        '<br> <br><input type="text"  class="form-control"  name="tel_no" placeholder="Tel No"><br>\n' +
+                        '                </div>\n';
+                }else if(prof == "student"){
+                    data = '<div id="student" class="profession_field" >\n' +
+                        '<label>Student :</label><br>\n' +
+                        '<input type="text"  class="form-control"  rows="1" name="institution" placeholder="Institution"><br>\n' +
+                        '<input type="text"  class="form-control"  rows="1" name="faculty_name" placeholder="Faculty Name"><br>\n' +
+                        '<input type="text"  class="form-control"  rows="1" name="course" placeholder="Course"><br>\n' +
+                        '</div>\n';
+                }
+                $('#prof').html(data);
+            });
             if($(this).val() == 1){
                 html =
                     '<input type="email" class="form-control" placeholder="Email" required name="email" />\n' +
@@ -503,7 +545,7 @@
                     '                <div class="form-group">\n' +
                     '                    <label> Profession : </label>\n' +
                     '\n' +
-                    '                    <select class="form-control" id="profession" name="profession">\n' +
+                    '                    <select class="form-control profession" name="profession">\n' +
                     '                        <option value="0">Select Profession</option>\n' +
                     '                        <option value="general">General</option>\n' +
                     '                        <option value="researcher">Researcher</option>\n' +
@@ -511,72 +553,7 @@
                     '                        <option value="student">Student</option>\n' +
                     '                    </select>\n' +
                     '\n' +
-                    '                </div>\n' +
-                    '                <div id="general" class="profession_field">\n' +
-                    '                    <label>House :</label><br>  <textarea  class="form-control"  rows="3" name="house" placeholder="house"></textarea><br>\n' +
-                    '                </div>\n' +
-                    '\n' +
-                    '                <div id="researcher" class="profession_field">\n' +
-                    '                    <label>Researcher :</label><br>  <textarea  class="form-control"  rows="1" name="institution" placeholder="institution"></textarea><br>\n' +
-                    '                    <input type="text"  class="form-control"  rows="1" name="area_of" placeholder="Area Of"><br>\n' +
-                    '                    <input type="text"  class="form-control"  rows="1" name="position" placeholder="Position"><br>\n' +
-                    '                </div>\n' +
-                    '\n' +
-                    '                <div id="industry" class="profession_field">\n' +
-                    '                    <label>Industry :</label><br>\n' +
-                    '                    <input type="text"  class="form-control"  rows="1" name="name_of" placeholder="Name Of"><br>\n' +
-                    '                    <textarea  class="form-control"  rows="1" name="address" placeholder="Address"></textarea><br>\n' +
-                    '\n' +
-                    '\n' +
-                    '                    <label> Sector:  </label>  <select name="sector">\n' +
-                    '\n' +
-                    '                        <option value="0" selected>Please Select</option>\n' +
-                    '                        <option value="Accounting/Finance" >Accounting/Finance</option>\n' +
-                    '\n' +
-                    '                        <option value="Admin/Human Resources">Admin/Human Resources</option>\n' +
-                    '\n' +
-                    '                        <option value="Arts/Media/Communications">Arts/Media/Communications</option>\n' +
-                    '\n' +
-                    '                        <option value="Building/Construction">Building/Construction</option>\n' +
-                    '\n' +
-                    '                        <option value="Computer/Information Technology">Computer/Information Technology</option>\n' +
-                    '\n' +
-                    '                        <option value="Education/Training">Education/Training</option>\n' +
-                    '\n' +
-                    '                        <option value="Engineering">Engineering</option>\n' +
-                    '\n' +
-                    '                        <option value="HealthCare">HealthCare</option>\n' +
-                    '\n' +
-                    '                        <option value="Hotel/Restaurant">Hotel/Restaurant</option>\n' +
-                    '\n' +
-                    '                        <option value="Manufacturing">Manufacturing</option>\n' +
-                    '\n' +
-                    '                        <option value="Sales/Marketing">Sales/Marketing</option>\n' +
-                    '\n' +
-                    '                        <option value="Sciences">Sciences</option>\n' +
-                    '\n' +
-                    '                        <option value="Services">Services</option>\n' +
-                    '\n' +
-                    '                        <option value="Others">Others</option>\n' +
-                    '\n' +
-                    '                    </select>\n' +
-                    '\n' +
-                    '\n' +
-                    '\n' +
-                    '                    <!--<input type="text"  class="form-control"  name="sector" placeholder="Sector"><br>-->\n' +
-                    '                    <br> <br><input type="text"  class="form-control"  name="tel_no" placeholder="Tel No"><br>\n' +
-                    '\n' +
-                    '                </div>\n' +
-                    '\n' +
-                    '\n' +
-                    '\n' +
-                    '                <div id="student" class="profession_field" >\n' +
-                    '                    <label>Student :</label><br>\n' +
-                    '                    <input type="text"  class="form-control"  rows="1" name="institution" placeholder="Institution"><br>\n' +
-                    '                    <input type="text"  class="form-control"  rows="1" name="faculty_name" placeholder="Faculty Name"><br>\n' +
-                    '                    <input type="text"  class="form-control"  rows="1" name="course" placeholder="Course"><br>\n' +
-                    '\n' +
-                    '                </div>\n' +
+                    '                </div><div id="prof"></div>\n' +
                     '                <br>\n' +
                     '                <input type="submit" name="submit" value="Register" class="btn btn-block btn-primary" />';
                 $('#form-data').html(html);
