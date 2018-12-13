@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4a77c27-91b0-4256-8e3f-92710a6f4569" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Login_Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Login_Test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,15 +43,10 @@
       <file leaf-file-name="Login_Test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Login_Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="195" column="16" selection-start-line="195" selection-start-column="16" selection-end-line="195" selection-end-column="16" />
+            <state relative-caret-position="487">
+              <caret line="588" lean-forward="true" selection-start-line="588" selection-end-line="588" />
               <folding>
                 <element signature="e#7011#7018#1#HTML" expanded="true" />
-                <element signature="e#2333#2338#0" expanded="true" />
-                <element signature="e#18034#18039#0" expanded="true" />
-                <element signature="e#20851#20856#0" expanded="true" />
-                <element signature="e#21362#21367#0" expanded="true" />
-                <element signature="e#22895#22900#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,12 +180,12 @@
       <workItem from="1544003026214" duration="599000" />
       <workItem from="1544083265285" duration="82000" />
       <workItem from="1544290881667" duration="38000" />
-      <workItem from="1544693821021" duration="169000" />
+      <workItem from="1544693821021" duration="326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4617000" />
+    <option name="totallyTimeSpent" value="4774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1364" height="725" extended-state="0" />
@@ -245,11 +239,6 @@
           <caret line="544" column="30" selection-start-line="544" selection-start-column="30" selection-end-line="544" selection-end-column="30" />
           <folding>
             <element signature="e#7011#7018#1#HTML" expanded="true" />
-            <element signature="e#2333#2338#0" expanded="true" />
-            <element signature="e#18034#18039#0" expanded="true" />
-            <element signature="e#20851#20856#0" expanded="true" />
-            <element signature="e#21362#21367#0" expanded="true" />
-            <element signature="e#22895#22900#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -481,15 +470,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Login_Test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="195" column="16" selection-start-line="195" selection-start-column="16" selection-end-line="195" selection-end-column="16" />
+        <state relative-caret-position="487">
+          <caret line="588" lean-forward="true" selection-start-line="588" selection-end-line="588" />
           <folding>
             <element signature="e#7011#7018#1#HTML" expanded="true" />
-            <element signature="e#2333#2338#0" expanded="true" />
-            <element signature="e#18034#18039#0" expanded="true" />
-            <element signature="e#20851#20856#0" expanded="true" />
-            <element signature="e#21362#21367#0" expanded="true" />
-            <element signature="e#22895#22900#0" expanded="true" />
           </folding>
         </state>
       </provider>
