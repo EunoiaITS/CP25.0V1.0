@@ -30,23 +30,23 @@
 			<ul class="list-group">
 			  <li class="list-group-item active" id="allLink">
 			    <span class="badge"><?php echo $nTotal; ?></span>
-			    <a style="color:#000;" href="javascript:void(0)" onClick="return showAll()">All</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showAll()">All</a>
 			  </li>
 			  <li class="list-group-item" id="quranLink">
 			    <span class="badge"><?php echo $nQuran; ?></span>
-			    <a style="color:#000;" href="javascript:void(0)" onClick="return showQuran()">Quran</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showQuran()">Quran</a>
 			  </li>
 			  <li class="list-group-item" id="hadithLink">
 			    <span class="badge"><?php echo $nHadith; ?></span>
-			    <a style="color:#000;" href="javascript:void(0)" onClick="return showHadith()">Hadith</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showHadith()">Hadith</a>
 			  </li>
 			  <li class="list-group-item" id="manuLink">
 			    <span class="badge"><?php echo $nManu; ?></span>
-			    <a style="color:#000;" href="javascript:void(0)" onClick="return showManuscript()">Manuscript</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showManuscript()">Manuscript</a>
 			  </li>
 			  <li class="list-group-item" id="articleLink">
 			    <span class="badge"><?php echo $nArticle; ?></span>
-			    <a style="color:#000;" href="javascript:void(0)" onClick="return showArticle()">Scientific Article</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showArticle()">Scientific Article</a>
 			  </li>
 			</ul>
 		</div>
@@ -83,7 +83,7 @@
 			<div id="all">
 				<ol class="breadcrumb">
 					<li class="active">Top Quran Results</li>
-					<li><a href="javascript:void(0)" onClick="return showQuran()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" onClick="return showQuran()">View All</a></li>
 				</ol>
 				<?php if(isset($quran)){ $cc=0; foreach($quran as $result){ $cc++; ?>
 				<div class="row">
@@ -123,7 +123,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=quran&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a  target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=quran&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -141,7 +141,7 @@
 
 				<ol class="breadcrumb">
 					<li class="active">Top Hadith Results</li>
-					<li><a href="javascript:void(0)" onClick="return showHadith()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" onClick="return showHadith()">View All</a></li>
 				</ol>
 
 				<?php if(isset($hadiths)){ $cc=0; foreach($hadiths as $result){ $cc++; ?>
@@ -182,7 +182,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=hadith&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=hadith&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -201,7 +201,7 @@
 
 				<ol class="breadcrumb">
 					<li class="active">Top Manuscript Results</li>
-					<li><a href="javascript:void(0)" onClick="return showManuscript()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" onClick="return showManuscript()">View All</a></li>
 				</ol>
 
 				<?php if(isset($manuscripts)){ $cc=0; foreach($manuscripts as $result){ $cc++; ?>
@@ -242,7 +242,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=manuscript&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=manuscript&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -260,7 +260,7 @@
 
 				<ol class="breadcrumb">
 					<li class="active">Top Scientific Article Results</li>
-					<li><a href="javascript:void(0)" onClick="return showArticle()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" onClick="return showArticle()">View All</a></li>
 				</ol>
 
 				<?php if(isset($articles)){ $cc=0; foreach($articles as $result){ $cc++; ?>
@@ -269,7 +269,7 @@
 						<div class="panel panel-default">
 						  <div class="panel-heading text-center">
 						    <h3 class="panel-title">
-						    	<a target="_blank" href="<?php echo $result->url; ?>">
+						    	<a class="link" target="_blank" href="<?php echo $result->url; ?>">
 						    		<?php echo $result->disease_1." > ".$result->disease_2." > ".$result->name; ?>
 						    	</a>
 						    </h3>
@@ -319,7 +319,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=scientific_article&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=scientific_article&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -376,7 +376,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=quran&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=quran&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -431,7 +431,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=hadith&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=hadith&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -485,7 +485,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=manuscript&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=manuscript&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -507,7 +507,7 @@
 						<div class="panel panel-default">
 						  <div class="panel-heading text-center">
 						    <h3 class="panel-title">
-						    	<a target="_blank" href="<?php echo $result->url; ?>">
+						    	<a class="link" target="_blank" href="<?php echo $result->url; ?>">
 						    		<?php echo $result->disease_1." > ".$result->disease_2." > ".$result->name; ?>
 						    	</a>
 						    </h3>
@@ -557,7 +557,7 @@
 						    <hr>
 						    <div class="row">
 						    	<div class="col-md-4 col-md-offset-8">
-						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=scientific_article&id=<?php echo $result->id; ?>" class="btn btn-block btn-default">Details</a>
+						    		<a target="_blank" href="<?php echo Request::$BASE_URL ?>index.php/page?type=scientific_article&id=<?php echo $result->id; ?>" class="btn btn-block btn-default link">Details</a>
 						    	</div>
 						    </div>
 
@@ -615,7 +615,7 @@
 								<th>Quran</th>
 								<td>
 									<?php if($nQuran>0){ ?>
-									<a href="javascript:void(0)" onClick="return showQuran()">
+									<a class="link" href="javascript:void(0)" onClick="return showQuran()">
 										<?php echo $nQuran ?> Results
 									</a>
 									<?php }else{ ?>
@@ -627,7 +627,7 @@
 								<th>Hadith</th>
 								<td>
 									<?php if($nHadith>0){ ?>
-									<a href="javascript:void(0)" onClick="return showHadith()">
+									<a class="link" href="javascript:void(0)" onClick="return showHadith()">
 										<?php echo $nHadith ?> Results
 									</a>
 									<?php }else{ ?>
@@ -639,7 +639,7 @@
 								<th>Manuscripts</th>
 								<td>
 									<?php if($nManu>0){ ?>
-									<a href="javascript:void(0)" onClick="return showManuscript()">
+									<a class="link" href="javascript:void(0)" onClick="return showManuscript()">
 										<?php echo $nManu ?> Results
 									</a>
 									<?php }else{ ?>
@@ -651,7 +651,7 @@
 								<th>Scientific Articles</th>
 								<td>
 									<?php if($nArticle>0){ ?>
-									<a href="javascript:void(0)" onClick="return showArticle()">
+									<a class="link" href="javascript:void(0)" onClick="return showArticle()">
 										<?php echo $nArticle ?> Results
 									</a>
 									<?php }else{ ?>
@@ -673,7 +673,7 @@
 							<tr class="text-center">
 								<td>
 									<u>
-										<a target="_blank" href="<?php echo Request::$BASE_URL; ?>index.php/page?type=prophetic_food&id=<?php echo $prophetic_food->id; ?>&info_id=<?php echo $add->id; ?>">
+										<a class="link" target="_blank" href="<?php echo Request::$BASE_URL; ?>index.php/page?type=prophetic_food&id=<?php echo $prophetic_food->id; ?>&info_id=<?php echo $add->id; ?>">
 											<?php echo $add->type_title; ?>
 										</a>
 									</u>
@@ -689,7 +689,7 @@
 					</div>
 					<div class="food_synonyms">
 						<?php if(isset($pfs) && count($pfs)>0){ foreach($pfs as $p){ ?>
-							<a href="<?php echo $p['url']; ?>"><?php echo $p['name']; ?></a>,
+							<a class="link" href="<?php echo $p['url']; ?>"><?php echo $p['name']; ?></a>,
 						<?php }}else{echo "No Synonyms Found!";} ?>
 					</div>
 					<canvas id="viewport" width="300" height="400"></canvas>
@@ -707,5 +707,15 @@
 	
 </div>
 <!-- container ends -->
-
-
+<script type="text/javascript">
+$(document).ready(function(){
+    var package = '<?php echo $_SESSION['package_id'];?>';
+    if(package == 1){
+        $(".link").attr("href", "#");
+        $("a").on('click',function (e) {
+           e.preventDefault();
+           alert('Please Subscribe to a paid package for view links!');
+        });
+    }
+});
+</script>

@@ -57,6 +57,8 @@ class User{
 							
 							$session->add('public_package',$wallet[0]);
 
+							$session->add('package_id',$login->subscription_package_id);
+
 							alert("Logged In", Request::$BASE_PATH);
 							
 							}else{
@@ -68,7 +70,9 @@ class User{
 							$session->add('public_user_name',$login->first_name);
 							
 							$session->add('public_package',false);
-							    
+
+                                $session->add('package_id',$login->subscription_package_id);
+
 							    alert("Package Expired", Request::$BASE_PATH . "index.php/packageExpired/".$login->id);
 							}
 
