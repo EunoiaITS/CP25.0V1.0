@@ -30,23 +30,23 @@
 			<ul class="list-group">
 			  <li class="list-group-item active" id="allLink">
 			    <span class="badge"><?php echo $nTotal; ?></span>
-			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showAll()">All</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showAll()"<?php }?>>All</a>
 			  </li>
 			  <li class="list-group-item" id="quranLink">
 			    <span class="badge"><?php echo $nQuran; ?></span>
-			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showQuran()">Quran</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showQuran()"<?php }?>>Quran</a>
 			  </li>
 			  <li class="list-group-item" id="hadithLink">
 			    <span class="badge"><?php echo $nHadith; ?></span>
-			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showHadith()">Hadith</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showHadith()"<?php }?>>Hadith</a>
 			  </li>
 			  <li class="list-group-item" id="manuLink">
 			    <span class="badge"><?php echo $nManu; ?></span>
-			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showManuscript()">Manuscript</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showManuscript()"<?php }?>>Manuscript</a>
 			  </li>
 			  <li class="list-group-item" id="articleLink">
 			    <span class="badge"><?php echo $nArticle; ?></span>
-			    <a class="link" style="color:#000;" href="javascript:void(0)" onClick="return showArticle()">Scientific Article</a>
+			    <a class="link" style="color:#000;" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showArticle()"<?php }?>>Scientific Article</a>
 			  </li>
 			</ul>
 		</div>
@@ -83,7 +83,7 @@
 			<div id="all">
 				<ol class="breadcrumb">
 					<li class="active">Top Quran Results</li>
-					<li><a class="link" href="javascript:void(0)" onClick="return showQuran()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showQuran()"<?php }?>>View All</a></li>
 				</ol>
 				<?php if(isset($quran)){ $cc=0; foreach($quran as $result){ $cc++; ?>
 				<div class="row">
@@ -141,7 +141,7 @@
 
 				<ol class="breadcrumb">
 					<li class="active">Top Hadith Results</li>
-					<li><a class="link" href="javascript:void(0)" onClick="return showHadith()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showHadith()"<?php }?>>View All</a></li>
 				</ol>
 
 				<?php if(isset($hadiths)){ $cc=0; foreach($hadiths as $result){ $cc++; ?>
@@ -201,7 +201,7 @@
 
 				<ol class="breadcrumb">
 					<li class="active">Top Manuscript Results</li>
-					<li><a class="link" href="javascript:void(0)" onClick="return showManuscript()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showManuscript()"<?php }?>>View All</a></li>
 				</ol>
 
 				<?php if(isset($manuscripts)){ $cc=0; foreach($manuscripts as $result){ $cc++; ?>
@@ -260,7 +260,7 @@
 
 				<ol class="breadcrumb">
 					<li class="active">Top Scientific Article Results</li>
-					<li><a class="link" href="javascript:void(0)" onClick="return showArticle()">View All</a></li>
+					<li><a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showArticle()"<?php }?>>View All</a></li>
 				</ol>
 
 				<?php if(isset($articles)){ $cc=0; foreach($articles as $result){ $cc++; ?>
@@ -615,7 +615,7 @@
 								<th>Quran</th>
 								<td>
 									<?php if($nQuran>0){ ?>
-									<a class="link" href="javascript:void(0)" onClick="return showQuran()">
+									<a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showQuran()"<?php }?>>
 										<?php echo $nQuran ?> Results
 									</a>
 									<?php }else{ ?>
@@ -627,7 +627,7 @@
 								<th>Hadith</th>
 								<td>
 									<?php if($nHadith>0){ ?>
-									<a class="link" href="javascript:void(0)" onClick="return showHadith()">
+									<a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showHadith()"<?php }?>>
 										<?php echo $nHadith ?> Results
 									</a>
 									<?php }else{ ?>
@@ -639,7 +639,7 @@
 								<th>Manuscripts</th>
 								<td>
 									<?php if($nManu>0){ ?>
-									<a class="link" href="javascript:void(0)" onClick="return showManuscript()">
+									<a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showManuscript()"<?php }?>>
 										<?php echo $nManu ?> Results
 									</a>
 									<?php }else{ ?>
@@ -651,7 +651,7 @@
 								<th>Scientific Articles</th>
 								<td>
 									<?php if($nArticle>0){ ?>
-									<a class="link" href="javascript:void(0)" onClick="return showArticle()">
+									<a class="link" href="javascript:void(0)" <?php if(isset($_SESSION['package_id']) && $_SESSION['package_id'] > 1){?>onClick="return showArticle()"<?php }?>>
 										<?php echo $nArticle ?> Results
 									</a>
 									<?php }else{ ?>
@@ -712,9 +712,9 @@ $(document).ready(function(){
     var package = '<?php echo $_SESSION['package_id'];?>';
     if(package == 1){
         $(".link").attr("href", "#");
-        $("a").on('click',function (e) {
+        $(".link").on('click',function (e) {
            e.preventDefault();
-           alert('Please Subscribe to a paid package for view links!');
+           alert('Please subscribe to a paid package to view the links!');
         });
     }
 });
